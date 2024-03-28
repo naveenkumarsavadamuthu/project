@@ -1,0 +1,41 @@
+<div class="flex gap-2 font-semibold whitespace-nowrap">
+  <div class="flex gap-2">
+    <div
+      class="flex flex-col justify-center text-base tracking-tight leading-5 text-center text-white"
+    >
+      <div
+        class="justify-center items-center w-8 h-8 bg-violet-500 rounded flex"
+      >
+        01
+      </div>
+    </div>
+    <div class="my-auto text-xl tracking-tight leading-6 text-violet-500">
+      Registration
+    </div>
+  </div>
+  <div
+    class="shrink-0 my-auto h-px border border-solid bg-zinc-300 border-zinc-300 w-[23px]"
+  ></div>
+  <div class="flex gap-2 pr-5" >
+    <div
+      class="flex flex-col justify-center text-base tracking-tight leading-5 text-violet-500"
+    >
+      <div
+        class="justify-center px-2 py-2.5 rounded border border-violet-500 border-solid"[ngClass]="{ 'bg-violet-500  text-white': submitted }"
+      >
+        02
+      </div>
+    </div>
+    <div class="name-001 my-auto text-xl tracking-tight leading-6 "[ngClass]="{ 'text-violet-500': submitted }">
+      Verification
+    </div>
+  </div>
+</div>
+<button *ngIf=" !submitted" (click)="onSubmit()">Submit</button>
+
+<div *ngIf="submitted">
+  <p>this page Verification</p>
+  <button>Close</button>
+</div>
+
+  
